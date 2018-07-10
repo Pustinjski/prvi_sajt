@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Moteli i Hoteli</title>
+
+    <link rel="stylesheet"  href="../css/stilovi.css" type="text/css"  />
+
+
+  </head>
+  <body>
+
+    <div class="vrh">
+
+    <div class="naslov-pretraga">
+      <a href="index.php"> <h1>Hoteli i Moteli</h1></a>
+
+
+    </form>
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <h2>OPIS SAJTA</h2>
+
+<div class="opis">
+<p>Sajt je baziran na ideji da svim posjetiocima pruzi mogucnost upoznavanja sa hotelskim uslugama koje se nude u Crnoj Gori.
+Svaki hotel ili motel koji je u ponudi prati lokacija smještaja, ocijena i kratki opis gdje se mozete upoznati sa hranom koju nudi i drugim uslugama konkretnog hotela.
+</p>
+<p>Podacima se pristupa u PHP fajlovima fečovanjem iz baze podataka napravljene u MySql-u.
+  Podaci koji se prikazuju na sajtu, a učitavaju iz baze podataka su putanje slika za slideshow , informacije o smještaju (naziv,ocijena,opis i komentari) i informacije o korisniku koji je trenutno prijavljen.
+  </p>
+  <p>JavaScript je upotrebljen za "slideshow" slika, prikazivanje prozora za prijavu i registraciju korisnika kao i za prikazivanje najviše 5 rezultata pretrage.
+   </p>
+   <p>Dodatne biblioteke nisu korištene.</p>
+   <a href="../opisSajta.pdf" download>opisSajta.pdf</a>
+</div>
+
+    <center>
+       <h3>Baza podataka</h3>
+        <img src="../images/er.png" alt="" width="600px" height="400px">
+   </center>
+<div class="bazaOpis">
+
+
+
+  <h5>users(id,username,password,fisrtname,surname) primarni kljuc je "id"</h5>
+  <h5>admini(user_id) primarni  je "user_id" , spoljasnji kljuc je "user_id" i pokazuje na users(id)</h5>
+  <h5>hoteli(id,naziv,ocjena,opis,grad,vrsta) primarni kljuc je "id"</h5>
+  <h5>vrsta(id,naziv) primarni kljuc je "id" , spoljasnji kljuc je "id" i pokazuje na hoteli(id)</h5>
+  <h5>slike(smjestaj_id,putanja) primarni kljuc je "smjestaj_id", spoljasnji kljuc je "smjestaj_id" i pokazuje na hoteli(id)</h5>
+  <h5>komentari(k_id,smjestaj_id,sadrzaj,username,prijava) primarni kljuc je "k_id", spoljasnji kljuc je "smjestaj_id" i pokazuje na hoteli(id)</h5>
+  <h5>slideslike(id,putanja) primarni kljuc je "id"</h5>
+
+
+</div>
+
+  </body>
+</html>

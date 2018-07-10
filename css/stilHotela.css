@@ -1,0 +1,96 @@
+.slika {
+  float: left;
+  display: inline-block;
+  padding: 30px;
+}
+
+.detalji {
+  float: left;
+  padding: 20px;
+  width: 500px;
+}
+.detalji div {
+  float: right;
+  margin-top: 5px;
+}
+.detalji span {
+  font-weight: bold;
+}
+
+.detalji h2 {
+  text-align: left;
+}
+
+.krug {
+
+  padding: 10px 20px;
+  border-radius: 45px;
+  color: white;
+  background-color: #f4bf21;
+  margin: 5px;
+
+}
+
+h4 {
+  position: absolute;
+}
+.komentari {
+  margin-top: 350px;
+  margin-left: 50px;
+}
+
+
+
+.komentari li{
+  width: 700px;
+  margin-left: 20px;
+  margin-bottom: 22px;
+}
+li:first-of-type {
+  margin-top: 50px;
+}
+li:last-of-type {
+  margin-bottom: -30px;
+}
+
+div.komentari{
+ width: 700px;
+ margin-bottom: 50px;
+}
+
+span.ime {
+  color: rgba(47, 48, 51, 0.83);
+  font-size: 19px;
+  font-family: "Times New Roman",monospace;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: -10px;
+}
+
+
+#ime {
+  float: right;
+  color:  white;
+  width: auto;
+  padding: 5px;;
+  margin: 0;
+  background-color: rgb(224, 58, 53);
+}
+.komentari button {
+  background-color: #f4bf21;
+  font-size: 12px;
+
+  border-radius: 3px;
+  width: 100px;
+  margin: 8px 0px;
+  padding: 14px 20px;
+
+
+  color: black;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
